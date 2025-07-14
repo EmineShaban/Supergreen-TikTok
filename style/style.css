@@ -1,0 +1,60 @@
+@font-face {
+    font-family: helen-light;
+    src: url(../fonts/Helen-Bg-Light.woff2);
+}
+
+@font-face {
+    font-family: helen-regular;
+    src: url(../fonts/Helen-Bg-Regular.woff2);
+}
+
+
+body {
+    /* font-family: "Roboto", sans-serif; */
+    color: var(--main-black);
+    font-family: helen-regular;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    margin-top: 0;
+}
+
+
+h1,
+h2 {
+    line-height: 1.3;
+    font-family: "Oswald", sans-serif;
+    /* font-family: "Gothic", sans-serif; */
+
+}
+
+p,
+li,
+a,
+span {
+    line-height: 1.3;
+}
+
+:root {
+    --main-black: #161616;
+    --main-yellow: #f3b800;
+    --light-yellow: #f8a900;
+    --main-grey: #ececec;
+    --main-red: #f3371a;
+    --main-orange: #f37c00;
+
+    --main-green: #2d6a3c;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
