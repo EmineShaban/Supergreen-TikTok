@@ -174,7 +174,7 @@ img {
     margin: auto;
 }
 
-.daily-nutrition-text .text-right {
+.text-right {
     font-weight: 700;
 
     margin-top: 25px;
@@ -187,7 +187,7 @@ img {
 
 }
 
-.daily-nutrition-text .text-center {
+.text-center {
     text-transform: uppercase;
     padding-bottom: 10px;
     border-bottom: 1px solid #56535352;
@@ -523,9 +523,17 @@ img {
     margin: auto;
 }
 
+.craft {
+    margin: 40px auto;
+}
+
 .craft .title {
     text-align: left;
     margin-top: 30px;
+}
+
+.craft ul {
+    margin: 30px auto;
 }
 
 .craft li.usp::before {
@@ -609,7 +617,7 @@ img {
 
 .craft-div ul li span {
     display: block;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
     margin-bottom: 5px;
     text-align: left;
@@ -758,15 +766,94 @@ img {
     border-top: unset;
 }
 
-.faqs li.usp:last-child {
-    border-bottom: 1px solid rgba(200, 200, 200, 0.593);
-
-}
-
-
 
 .faqs li.usp.active::after {
     content: "\2212";
     margin-top: -13px;
 
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .on-desktop {
+        display: block;
+    }
+
+    .on-mobile {
+        display: none;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+    }
+
+    .hero .green-cta {
+        width: 60%;
+
+    }
+
+    .daily-nutrition {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    .daily-nutrition {
+        width: 85%;
+        margin: auto;
+    }
+
+    .glass-text {
+        margin-top: 0;
+    }
+
+    .text-center {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+
+    .glass-text ul p {
+        text-align: left;
+
+    }
+
+    .glass-text ul li {
+        text-align: left;
+    }
+
+    .benefits ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin: 40px 0;
+    }
+
+    .benefits ul li{
+        margin: 0;
+    }
+
+
+
+/* } */
+
+
+
+/* @media only screen and (min-width: 994px) { */
+
+
+    .offers {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    .offers-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+    }
+    .card-text img{
+        width: 150px;
+    }
 }
